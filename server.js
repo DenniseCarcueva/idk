@@ -13,10 +13,10 @@ app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'views/app.html'));
 });
 app.get('/about', function(req, res){
-  res.sendFile(path.join(__dirname, 'views/about.html'));
+  res.sendFile(path.join(__dirname, 'views/pmo.html'));
 });
 app.get('*', function(req, res){
-  res.sendFile(path.join(__dirname, 'views/about.html'));
+  res.sendFile(path.join(__dirname, 'views/pmo.html'));
 });
 //express server listen
 var server = app.listen(app.get('port'), function(){
